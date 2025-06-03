@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     }
     
     private func isValidInput() -> Bool {
-        let operators: Set<Character> = ["+", "-", "*", "/"]
+        let operators: Set<Character> = ["+", "-", "*", "/", "."]
         let chars = Array(workings)
         
         guard let first = chars.first, !operators.contains(first),
